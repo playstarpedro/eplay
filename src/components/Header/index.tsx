@@ -6,7 +6,7 @@ import * as S from './styles'
 import logo from '../../assets/images/logo.svg'
 import cartIcon from '../../assets/images/carrinho.svg'
 
-import { open, close } from '../../store/reducers/cart'
+import { open } from '../../store/reducers/cart'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
 import { useState } from 'react'
@@ -62,7 +62,7 @@ const Header = () => {
             </S.Links>
           </nav>
         </div>
-        <S.CartButton onClick={openCart}>
+        <S.CartButton role="button" onClick={openCart}>
           {items.length}
           <span> - produtos(s) </span>
           <img src={cartIcon} alt="carrinho" />

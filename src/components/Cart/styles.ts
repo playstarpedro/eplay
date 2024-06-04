@@ -37,6 +37,12 @@ export const SideBar = styled.aside`
   max-width: 360px;
   width: 100%;
 
+  .empty-text {
+    font-size: 14px;
+    line-height: ${colors.white};
+    text-align: center;
+  }
+
   ${ButtonContainer} {
     max-width: 100%;
     width: 100%;
